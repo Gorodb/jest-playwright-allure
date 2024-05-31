@@ -1,6 +1,6 @@
 {
   "name": "jest-circus-playwright-allure",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "main": "index.js",
   "description": "Running tests using Jest & Playwright.",
   "license": "MIT",
@@ -43,8 +43,8 @@
     "*.{js,ts}": "eslint --fix"
   },
   "dependencies": {
-    "allure-jest": "^2.15.1",
     "expect-playwright": "^0.8.0",
+    "jest-allure-circus": "^1.0.21",
     "jest-process-manager": "^0.4.0",
     "nyc": "^15.1.0",
     "playwright-core": ">=1.2.0",
