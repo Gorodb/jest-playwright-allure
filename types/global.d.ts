@@ -30,7 +30,7 @@ declare const LAUNCH = 'LAUNCH'
 declare const PERSISTENT = 'PERSISTENT'
 declare const SERVER = 'SERVER'
 
-declare module 'jest-playwright-preset' {
+declare module 'jest-circus-playwright-allure' {
   const globalSetup: (config: JestConfig.GlobalConfig) => void
   const globalTeardown: (config: JestConfig.GlobalConfig) => void
   const getPlaywrightEnv: (env?: string) => void

@@ -405,7 +405,7 @@ describe('getPlaywrightInstance', () => {
     const getMissedPlaywrightInstance = () => getPlaywrightInstance('firefox')
 
     expect(getMissedPlaywrightInstance).toThrowError(
-      'jest-playwright-preset: Cannot find playwright package to use firefox',
+      'jest-circus-playwright-allure: Cannot find playwright package to use firefox',
     )
   })
 })
