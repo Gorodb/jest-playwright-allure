@@ -1,10 +1,10 @@
 {
-  "globalSetup": "jest-playwright-preset/setup.js",
-  "globalTeardown": "jest-playwright-preset/teardown.js",
-  "testEnvironment": "jest-playwright-preset",
-  "runner": "jest-playwright-preset/runner.js",
+  "globalSetup": "jest-circus-playwright-allure/setup.js",
+  "globalTeardown": "jest-circus-playwright-allure/teardown.js",
+  "testEnvironment": "jest-circus-playwright-allure",
+  "runner": "jest-circus-playwright-allure/runner.js",
   "setupFilesAfterEnv": [
     "expect-playwright",
-    "jest-playwright-preset/lib/extends.js"
+    "jest-circus-playwright-allure/lib/extends.js"
   ]
 }
