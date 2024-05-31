@@ -1,5 +1,5 @@
 {
-  "name": "jest-playwright-preset",
+  "name": "@vakazov/jest-playwright-allure",
   "version": "4.0.0",
   "main": "index.js",
   "description": "Running tests using Jest & Playwright.",
@@ -57,6 +57,8 @@
     "jest-runner": "^29.3.1"
   },
   "devDependencies": {
+    "allure-jest": "^2.15.1",
+    "allure-js-commons": "^2.15.1",
     "@types/debug": "4.1.7",
     "@types/jest": "^29.2.4",
     "@types/node": "18.0.6",
