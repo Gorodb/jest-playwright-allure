@@ -39,7 +39,6 @@ import {
   getPlaywrightInstance,
 } from './utils'
 import { saveCoverageOnPage, saveCoverageToFile } from './coverage'
-const AllureEnvironment = require('allure-jest/node').default
 
 const handleError = (error: Error): void => {
   process.emit('uncaughtException', error)
@@ -111,6 +110,7 @@ export const getPlaywrightEnv = (basicEnv = 'node'): unknown => {
   const RootEnv = require(basicEnv === 'node'
     ? 'jest-environment-node'
     : 'jest-environment-jsdom').default
+  const AllureEnvironment = require('allure-jest/jsdom').default
 
   return class PlaywrightEnvironment extends AllureEnvironment {
     readonly _config: JestPlaywrightProjectConfig
