@@ -107,10 +107,9 @@ const getDeviceName = (
 }
 
 export const getPlaywrightEnv = (basicEnv = 'node'): unknown => {
-  const RootEnv = require(basicEnv === 'node'
-    ? 'jest-environment-node'
-    : 'jest-environment-jsdom').default
-  const AllureEnvironment = require('allure-jest/jsdom').default
+  const AllureEnvironment = require(basicEnv === 'node'
+    ? 'allure-jest/node'
+    : 'allure-jest/jsdom').default
 
   return class PlaywrightEnvironment extends AllureEnvironment {
     readonly _config: JestPlaywrightProjectConfig
